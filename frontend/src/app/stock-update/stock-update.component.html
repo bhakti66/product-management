@@ -1,0 +1,7 @@
+<div class="input-group" >
+    <input id="stock_{{itemId}}" type="number" class="form-control" aria-describedby="basic-addon2" value="{{stockCount}}" disabled>
+    <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" [ngClass]="{'high':stockLevel=='High', 'medium':stockLevel=='Yellow', 'low':stockLevel=='Low'}">{{stockLevel}}</span>
+        <span class="input-group-text" id="basic-addon2" [ngClass]="{'high':stockClass=='A', 'medium':stockClass=='B', 'low':stockClass=='C'}">{{stockClass}}</span>
+    </div>
+</div>

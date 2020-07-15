@@ -1,0 +1,11 @@
+.high{
+    background-color: green;
+    color:white
+}
+.low{
+    background-color: red;
+    color: white
+}
+.medium{
+    background-color: yellow
+}
