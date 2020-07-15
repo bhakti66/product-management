@@ -62,4 +62,9 @@ export class AuthService {
     }
     return this.http.post(environment.apiUrl+"user/register",body).pipe()
   }
+
+  logout(){
+    localStorage.clear()
+    this.router.navigateByUrl("")
+  }
 }
